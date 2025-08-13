@@ -1,0 +1,34 @@
+〇Step1
+mkdir challenge
+
+〇Step2
+echo "" >> hello_world.txt
+
+〇Step3
+echo "Hello,world!" >> hello_world.txt
+git add .
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+git commit -m "hello_world.txtを追加"
+[main (root-commit) 1f803a3] hello_world.txtを追加
+1 file changed, 2 insertions(+)
+create mode 100644 hello_world.txt
+echo "こんにちは、世界！" >> hello_world.txt
+ git add .
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+git commit -m "日本語訳を追記"
+[main 4055873] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+〇Step4
+ git log
+commit 40558735ec7165baac737601f9b56b8ddcec56ce (HEAD -> main)
+Author: ENGINNER-six <out.six.look@outlook.jp>
+Date:   Thu Aug 14 08:04:13 2025 +0900
+
+    日本語訳を追記
+
+commit 1f803a35a83061becec6221fb45b2940da83cd1a
+Author: ENGINNER-six <out.six.look@outlook.jp>
+Date:   Thu Aug 14 08:03:00 2025 +0900
+
+    hello_world.txtを追加

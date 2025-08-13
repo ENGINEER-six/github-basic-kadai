@@ -1,0 +1,29 @@
+$ mkdir git_challenge
+
+$ cd git_challenge
+
+$ git init
+Initialized empty Git repository in 
+
+$ echo "Hello,world!" >> hello_world.txt
+
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 763b22b] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+$ git commit -m "日本語訳を追記"
+[main 6fae41b] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+$ git log --oneline
+6fae41b (HEAD -> main) 日本語訳を追記
+763b22b hello_world.txtを追加
